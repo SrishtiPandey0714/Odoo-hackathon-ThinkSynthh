@@ -1,0 +1,143 @@
+/* General Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-btn {
+  border: 1px solid #fff;
+  background: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Form Container Shared Styling */
+.form-container,
+.login-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Forgot link and alternate action */
+.forgot-link,
+a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #00aaff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #66ccff;
+}
+
+/* Response Message */
+#responseMsg {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffd700;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
