@@ -1,0 +1,40 @@
+body {
+    background-color: #111;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 30px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  input, select {
+    background-color: #333;
+    color: white;
+  }
+  
+  button {
+    background-color: #0f0;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
